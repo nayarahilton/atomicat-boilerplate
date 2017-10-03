@@ -1,5 +1,6 @@
-# Boilerplate
-Setup Boilerplate
+# Atomic Boilerplate
+This boilerplate mixes the atomic design and modular structure to offer the best of each.
+
 # README #
 This project uses Stylus, Nunjucks and NPM scripts.
 
