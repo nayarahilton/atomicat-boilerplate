@@ -1,2 +1,2 @@
-const test = 'test';
-console.log(test);
+import {foo, bar} from '../../organisms/list/_list.js';
+console.log(foo(), bar());
