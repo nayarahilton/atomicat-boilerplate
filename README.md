@@ -9,7 +9,7 @@ This project uses Stylus, Nunjucks and NPM scripts.
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 - [NPM scripts](https://docs.npmjs.com/misc/scripts)
 
-## Get starting ##
+## Getting Started ##
 
 ### Dependencies ###
 - [NodeJS](http://nodejs.org/)
