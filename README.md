@@ -6,23 +6,23 @@ This project uses [Stylus](http://stylus-lang.com/), [Nunjucks](https://mozilla.
 
 ## Features ##
 
-- This is a completely simple boilerplate containing only NPM scripts with the essential things you need (Stylus/Browserify/Nunjucks, watch, local server and minification)
-- Component based file and atomic design structure to help create ease maintainable projects
-- A Stylus library of commonly used mixins(ratio, img-cover, etc)
+- This is a completely simple boilerplate containing only NPM scripts with the essential things you need
+- Component based atomic design structure to help create ease maintainable projects
+- Commonly used mixins(ratio, img-cover, etc)
 
 ### Read more: ###
 
 ##### CSS #####
-- [Stylus](http://stylus-lang.com/): CSS pre processor;
-- [Lost](http://stylus-lang.com/): Grid system.
+- [Stylus](http://stylus-lang.com/): CSS pre processor
+- [Lost](http://stylus-lang.com/): Grid system
 
 ##### HTML #####
-- [Nunjucks](https://mozilla.github.io/nunjucks/): Template engine.
+- [Nunjucks](https://mozilla.github.io/nunjucks/): Template engine
 
 ##### JS #####
-[Browserify](http://browserify.org/): JS compiler.
+- [Browserify](http://browserify.org/): JS compiler
 
-[Jails](https://github.com/jails-org/Jails)
+- [Jails](https://github.com/jails-org/Jails): Micro-library for building simple and large scale applications
 
 ##### Setup #####
 - [NPM scripts](https://docs.npmjs.com/misc/scripts)
