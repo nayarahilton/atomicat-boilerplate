@@ -1,4 +1,8 @@
-# Atomic Boilerplate
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11380436/31257679-41396a4a-aa10-11e7-8bcb-a37a43acf4b3.png"/>
+</p>
+
+# Atomicat Boilerplate
 This boilerplate mixes the atomic design and modular structure to offer the best of each.
 
 # README #
