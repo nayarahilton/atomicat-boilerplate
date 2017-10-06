@@ -5,8 +5,14 @@
 > This is a completely simple boilerplate that only uses NPM scripts to build your project, without a huge stack dependencies. It mixes the atomic design and modular structure to offer the best of each.
 
 
+<br>
+<br>
+
+
 # README #
 This project uses [Stylus](http://stylus-lang.com/), [Nunjucks](https://mozilla.github.io/nunjucks/), [Browserify](http://browserify.org/) and [NPM scripts](https://docs.npmjs.com/misc/scripts).
+
+<br>
 
 ## Features ##
 - Component based atomic design structure to help create ease maintainable projects
@@ -32,6 +38,8 @@ This project uses [Stylus](http://stylus-lang.com/), [Nunjucks](https://mozilla.
 - [.editorconfig](http://editorconfig.org/) To maintain consistent coding
 - [Browsersync](https://www.browsersync.io/) Time-saving synchronised browser
 
+<br>
+
 ## Getting started ##
 
 -  Install [NodeJS](http://nodejs.org/)
@@ -46,25 +54,7 @@ $ npm run setup
 
 ```
 
-### Folders and Files
-
-```sh
-├── README.md
-├── dist
-│   ├── assets/
-│   ├── pages/
-│   ├── index.html
-├── package.json
-└── src
-    ├── _config/
-    ├── _mixins/
-    ├── assets/
-    ├── atoms/
-    ├── layouts/
-    ├── molecules/
-    ├── organisms/
-    └── pages/
-```
+<br>
 
 ## Tasks ##
 - `npm setup`: Install dependencies and starts project.
@@ -88,6 +78,54 @@ $ npm run setup
 - `npm images`: Generates svgs sprite and optimizes images.
 
 - `npm serve`: Creates a server on port 8000 and watches file changes to reload.
+
+<br>
+
+## Folders and Files ##
+
+```sh
+├── README.md
+├── dist
+│   ├──index.html # File with a list of links to pages
+│   │
+│   ├── assets/ # Folder with all assets
+│   │   ├──css/*.css
+│   │   ├──js/*.js
+│   │   └──img/*.{png,jpg,svg}
+│   │
+│   └── pages/ # Folder with all pages
+│       ├──home/index.html
+│       └──otherpage/index.html
+│
+├── package.json
+└── src
+    ├── _config/ # Folder with all variables
+    ├── _helpers/ # Folder with all helpers and mixins
+    ├── assets/
+    │    ├── icon/*.svg
+    │    └── img/*.{png,jpg}
+    │	
+    ├── atoms/ # Atoms folders with all components files (.styl, .js, .njk)
+    │   └── button
+    │       ├── _button.tpl
+    │       ├── _button.js
+    │       └── _button.styl
+    │
+    ├── layouts/
+    │   ├── masterpage.tpl
+    │   └── structure
+    │       ├── footer.styl
+    │       └── header.styl
+    │
+    ├── molecules/ # Molecules folders with all components files (.styl, .js, .njk)
+    ├── organisms/ # Organisms folders with all components files (.styl, .js, .njk)
+    └── pages/
+        └── home
+            ├── index.tpl
+            ├── main.js
+            └── main.styl
+```
+
 
 
 
