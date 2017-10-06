@@ -1,0 +1,96 @@
+
+/*
+------------------------------------------------------
+Helpers
+
+1. Resets
+2. Ratio
+3. Absolute center(horizontal and vertical)
+4. Hidden
+5. Image Tag Cover
+------------------------------------------------------
+*/
+
+/* 1. Resets
+------------------------------------------------------*/
+
+$reset(arg = '')
+
+  if (arg == list)
+    list-style none
+    margin 0
+    padding-left 0
+
+  if (arg == form)
+    background none
+    border 0
+    padding 0
+
+
+/* 2. Ratio
+------------------------------------------------------*/
+
+$aspect-ratio($width, $height)
+  position relative
+
+  &:before
+		content ''
+		display block
+		padding-top ($height / $width) * 100%
+		width 100%
+
+/* 3. Center
+------------------------------------------------------*/
+
+$center(arg = '', pos = '')
+  if (pos == fixed)
+    position fixed
+
+  else
+    position absolute
+
+  if (arg == top)
+    top 50%
+    transform translateY(-50%)
+
+  else if (arg == left)
+    left 50%
+    transform translateX(-50%)
+
+  else
+		left 50%
+    top 50%
+    transform translate(-50%, -50%)
+
+
+/* 4. Hidden
+------------------------------------------------------*/
+
+$hidden(arg = '')
+
+  // Hidden Font
+  if (arg == font)
+    font-size 0
+    text-indent -999em
+
+
+/* 4. Image Tag Cover
+------------------------------------------------------*/
+
+$img-cover(align = '')
+	overflow hidden
+  position relative
+
+  img
+		position absolute
+
+		if (align == left)
+			left 0
+			top 0
+
+		else if (align == right)
+			right 0
+			top 0
+
+		else
+			$(center)

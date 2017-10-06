@@ -1,8 +1,12 @@
 {
-  "name": "atomic-boilerplate",
+  "name": "atomicat-boilerplate",
   "version": "1.0.0",
-  "description": "Atomic Setup Boilerplate",
-  "main": "index.js",
+  "description": "A simple atomic boilerplate",
+	"main": "index.js",
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayarahilton/atomicat-boilerplate.git"
+  },
   "config": {
     "src": "src/assets",
     "dist": "dist/assets"
@@ -13,18 +17,21 @@
     "build": "npm run clean & npm-run-all -p build:*",
     "clean": "rimraf dist/assets/{css/*,js/*,images/*}",
     "stylint": "stylint src/pages/**/*.styl --watch",
-    "build:css": "mkdirp dist/assets/css && stylus -w ./src/pages/**/*.styl --use ./node_modules/autoprefixer-stylus --compress -o dist/assets/css/main.css",
+    "build:css": "stylus -w ./src/pages/**/*.styl --use ./node_modules/autoprefixer-stylus --compress -o dist/assets/css/main.css",
     "jslint": "eslint src/pages/**",
     "js-watch": "watchify ./src/pages/**/*.js -t babelify -o dist/assets/js/bundle.js -v --debug",
-    "js-build": "mkdirp dist/assets/js && browserify ./src/**/**/*.js -t babelify | uglifyjs -cm > dist/assets/js/bundle.js",
+    "js-build": "browserify ./src/**/**/*.js -t babelify | uglifyjs -cm > dist/assets/js/bundle.js",
     "build:js": "npm run js-build && npm run js-watch",
-    "build:html": "nunjucks **/*.tpl -w -p src -o dist -O nj.json",
+    "build:html": "nunjucks **/*.tpl -w -p src -o dist",
     "test": "npm run jslint && npm run stylint",
     "imagemin": "imagemin src/assets/img/*.{jpg,png} -o dist/assets/img",
-    "icons": "svgo -f src/assets/icons && mkdir -p dist/assets/img && svg-sprite-generate -d src/assets/icons -o dist/assets/img/icons.svg",
+    "icons": "svgo -f src/assets/icons && svg-sprite-generate -d src/assets/icons -o dist/assets/img/icons.svg",
     "images": "npm run imagemin && npm run icons",
     "build:serve": "browser-sync start --server \"dist\" --files \"dist/assets/css/*.css, dist/pages/**/*.html, dist/assets/js/*.js\" reload --port 8000"
-  },
+	},
+	"keywords": [
+    "boilerplate"
+  ],
   "author": "Nayara Hilton <naylop@gmail.com>",
   "license": "ISC",
   "devDependencies": {
