@@ -1,5 +1,7 @@
 dist/assets/css/*.css
+dist/assets/css/*.js
 dist/pages/**/*.html
+
 #### joe made this: https://goel.io/joe
 
 #####=== OSX ===#####
