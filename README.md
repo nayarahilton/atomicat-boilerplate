@@ -1,4 +1,8 @@
-# Atomic Boilerplate
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11380436/31257679-41396a4a-aa10-11e7-8bcb-a37a43acf4b3.png"/>
+</p>
+
+# Atomicat Boilerplate
 This boilerplate mixes the atomic design and modular structure to offer the best of each.
 
 # README #
@@ -9,6 +13,7 @@ This project uses [Stylus](http://stylus-lang.com/), [Nunjucks](https://mozilla.
 - This is a completely simple boilerplate containing only NPM scripts with the essential things you need
 - Component based atomic design structure to help create ease maintainable projects
 - Commonly used mixins(ratio, img-cover, etc)
+- [.editorconfig](http://editorconfig.org/) to help maintain consistent coding styles
 
 ### Read more: ###
 
@@ -26,19 +31,41 @@ This project uses [Stylus](http://stylus-lang.com/), [Nunjucks](https://mozilla.
 
 ##### Setup #####
 - [NPM scripts](https://docs.npmjs.com/misc/scripts)
+- [.editorconfig](http://editorconfig.org/) To maintain consistent coding
+- [Browsersync](https://www.browsersync.io/) Time-saving synchronised browser
 
 ## Getting started ##
 
 -  Install [NodeJS](http://nodejs.org/)
 
 ```
-# Clone the repository
-$ git clone https://github.com/nayarahilton/atomic-boilerplate.git 
+# Clone this repository
+$ git clone git@github.com:nayarahilton/atomic-boilerplate.git 
 
-# Install the dependencies and starts the project
+# Install dependencies and starts project
 $ cd path/to/project
 $ npm run setup
 
+```
+
+### Folders and Files
+
+```sh
+├── README.md
+├── dist
+│   ├── assets/
+│   ├── pages/
+│   ├── index.html
+├── package.json
+└── src
+    ├── _config/
+    ├── _mixins/
+    ├── assets/
+    ├── atoms/
+    ├── layouts/
+    ├── molecules/
+    ├── organisms/
+    └── pages/
 ```
 
 ## Tasks ##
