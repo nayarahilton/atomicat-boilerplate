@@ -16,24 +16,24 @@ Helpers
 
 $reset(arg = '')
 
-  if (arg == list)
-    list-style none
-    margin 0
-    padding-left 0
+if (arg == list)
+	list-style none
+	margin 0
+	padding-left 0
 
-  if (arg == form)
-    background none
-    border 0
-    padding 0
+	if (arg == form)
+		background none
+		border 0
+		padding 0
 
 
 /* 2. Ratio
 ------------------------------------------------------*/
 
 $aspect-ratio($width, $height)
-  position relative
+	position relative
 
-  &:before
+	&:before
 		content ''
 		display block
 		padding-top ($height / $width) * 100%
@@ -43,24 +43,24 @@ $aspect-ratio($width, $height)
 ------------------------------------------------------*/
 
 $center(arg = '', pos = '')
-  if (pos == fixed)
-    position fixed
+	if (pos == fixed)
+		position fixed
 
-  else
-    position absolute
+	else
+		position absolute
 
-  if (arg == top)
-    top 50%
-    transform translateY(-50%)
+	if (arg == top)
+		top 50%
+		transform translateY(-50%)
 
-  else if (arg == left)
-    left 50%
-    transform translateX(-50%)
-
-  else
+	else if (arg == left)
 		left 50%
-    top 50%
-    transform translate(-50%, -50%)
+		transform translateX(-50%)
+
+	else
+		left 50%
+		top 50%
+		transform translate(-50%, -50%)
 
 
 /* 4. Hidden
@@ -68,10 +68,10 @@ $center(arg = '', pos = '')
 
 $hidden(arg = '')
 
-  // Hidden Font
-  if (arg == font)
-    font-size 0
-    text-indent -999em
+	// Hidden Font
+	if (arg == font)
+		font-size 0
+		text-indent -999em
 
 
 /* 4. Image Tag Cover
